@@ -1,7 +1,7 @@
 import openai
 import random
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 def comp(PROMPT, MaxToken=50, outputs=3): 
@@ -28,28 +28,11 @@ def comp(PROMPT, MaxToken=50, outputs=3):
 
 
 
-PROMPT = """Generate 10 recipes in the following json format and mood:
-{
-"recipes": 
-[
- {  
-"mood": "",  
-"name": "recipe_name", 
-"description": "brief_description", 
-"prepTime": "preparation_time",
- "ingredients": ["ingredient1", "ingredient2", "ingredient3"],
-   "steps": ["step1", "step2", "step3"]
-}
-]
-
-Mood category:
-- **Cozy & Comforting:**
-    - Characteristics: Warm, hearty, and familiar.
-}
+PROMPT = """what is going on in the world today?
     
 """
 
-output = comp(PROMPT, MaxToken=3900, outputs=1)
+output = comp(PROMPT, MaxToken=3000, outputs=1)
 
 #print(output)
 

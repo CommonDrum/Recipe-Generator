@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const numButtons = buttons.length;
     const centerX = containerSize / 2;
     const centerY = containerSize / 2;
-    const radius = 160;
+    const radius = 240;
     let angle = 0;
     const angleStep = (2 * Math.PI) / numButtons;
 
